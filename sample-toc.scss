@@ -1,0 +1,63 @@
+/*
+ * Table of contents
+ * Author(s): Firstname Lastname (email@address.org)
+ * Created: 8 Feb 2015
+ * =================
+ * [0] Imports and dependencies
+ * [1] View-specific styles and overrides
+ * [2] Header
+ * [3] Main content
+ * [4] Sidebar, modules, asides
+ * [5] Footer
+ */
+
+
+
+/* =================
+ * [0] Imports and dependencies
+ * Modified: 9 Feb 2015
+ */
+
+@import "_some-file";
+@import "_some-other-file";
+
+
+
+/* =================
+ * [1] View-specific styles and overrides
+ * Modified: 10 Feb 2015
+ */
+
+.header-view {
+    attribute: value;   // Overriding the default value for this reason (crodriguez)
+}
+
+
+
+/* =================
+ * [2] Header
+ * Modified: 9 Feb 2015
+ */
+
+.search {
+    attribute: value;
+    attribute: value;
+}
+
+
+/* =================
+ * [3] Main content
+ * Modified: 9 Feb 2015
+ */
+
+
+/* =================
+ * [4] Sidebar, modules, asides
+ * Modified: 9 Feb 2015
+ */
+
+
+/* =================
+ * [5] Footer
+ * Modified: 9 Feb 2015
+ */
