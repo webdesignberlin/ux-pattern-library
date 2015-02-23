@@ -80,28 +80,33 @@ Types:
 
 - - -
 
-## Content sectioning
-* main
-* section
-* article
-* aside
-* header
-* footer
-* div
-* nav
-
-- - -
-
 ## Text content
-* headings (H1, H2, H3, H4, H5, H6)
-* paragraph
-* ol
-* ul
-* li
-* blockquote
-* dl
-* dt
-* dd
+
+### Headings `<h1>`, `<h2>`, `<h3>`, etc.
+
+### Paragraphs `<p>`
+
+### Ordered Lists `<ol>`
+
+Types:
+* is-bulleted       // When used on ordered lists, displays numbers
+* is-plain
+
+### Unordered Lists `<ul>`
+
+Types:
+* is-bulleted       // When used on unordered lists, displays filled disc / hollow disc (nested)
+* is-plain
+
+### Data Lists `<dl>`
+
+Types:
+* is-stacked        // Overrides the default tiered styling
+
+### Blockquote `<blockquote>
+
+States:
+* has-visual-quotes // If present, would use :before and :after to insert "'s for visual
 
 - - -
 
@@ -125,3 +130,15 @@ Types:
 * td
 * colgroup
 * caption
+
+- - -
+
+## Content sectioning
+* main
+* section
+* article
+* aside
+* header
+* footer
+* div
+* nav
