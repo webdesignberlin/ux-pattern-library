@@ -1,18 +1,86 @@
-# Atoms
-This page lists all the HTML elements. They are grouped by function to help you find what you need to achieve what you have in mind. Although this guide is written for those who are new or newer to coding, we intend it to be a useful reference for anyone.
+# Atomic elements
 
-## Status
-Name | Element | Classes | Complete
----- | ------- | ------- | --------
-Button | `<button>` | button | -
-... | ... | ... | -
-... | ... | ... | -
-... | ... | ... | -
-... | ... | ... | -
+## Global definitions
+These definitions may be defined globally and assigned to various elements.
+* `align-block`       // Makes the element display: block, taking its own line
+* `is-focused`        // Simple definition of borders, backgrounds, etc.
+* `is-active`         // Defines the pressed state for buttons, selected state for various
+* `is-disabled`       // Simple definition of borders, backgrounds, etc.
 
-## Atomic elements
+## Forms
 
-### Content sectioning
+### Buttons `<button>`
+
+Types:
+* `button-primary`    // Uses primary palette color
+* `button-secondary`  // Uses secondary palette color
+* `button-tertiary`   // Uses a tertiary palette color, or white
+
+States:
+* `is-focused`
+* `is-active`
+* `is-disabled`
+
+### Input `<input type="">`
+
+Types:
+* `text`
+* `email`
+* `tel`
+* `search`
+* `num`
+* `date`
+* `submit`
+
+Options:
+* `has-error`        // Can receive focus programmatically; alert color styling
+* `has-hint`         // Denotes if this field has hint text
+
+States
+* `is-focused`
+* `is-disabled`
+
+### Select `<select>`
+
+Options:
+* `has-error`
+* `has-hint`
+
+States:
+* `is-focused`
+* `is-disabled`
+
+### Textarea `<textarea>`
+
+Options:
+* `has-error`
+* `has-hint`
+
+States:
+* `is-focused`
+* `is-disabled`
+
+### Label `<label>`
+
+States:
+* `is-required`
+
+### Progress bars `<progress>`
+
+States:
+* `is-working`
+* `is-complete`
+* `has-error`
+
+### Form `<form>`
+
+Types:
+* `form-horizontal`  // Defaults items to display: inline-block; can be overridden w align-block
+* `form-vertical`    // Defaults items to display: block
+
+- - -
+
+## Content sectioning
 * main
 * section
 * article
@@ -22,7 +90,9 @@ Button | `<button>` | button | -
 * div
 * nav
 
-### Text content
+- - -
+
+## Text content
 * headings (H1, H2, H3, H4, H5, H6)
 * paragraph
 * ol
@@ -33,7 +103,9 @@ Button | `<button>` | button | -
 * dt
 * dd
 
-### Image and multimedia
+- - -
+
+## Image and multimedia
 * audio
 * figure
 * figcaption
@@ -41,7 +113,9 @@ Button | `<button>` | button | -
 * track
 * video
 
-### Tables
+- - -
+
+## Tables
 * table
 * tbody
 * thead
@@ -51,24 +125,3 @@ Button | `<button>` | button | -
 * td
 * colgroup
 * caption
-
-### Forms
-* button
-* input
-    * text
-    * email
-    * tel
-    * search
-    * num
-    * date
-    * submit
-* select
-* menu
-* option
-* optgroup
-* textarea
-* label
-* fieldset
-* legend
-* progress
-* form
