@@ -2,7 +2,6 @@
 
 ## Global definitions
 These definitions may be defined globally and assigned to various elements.
-* `align-block`       // Makes the element display: block, taking its own line
 * `is-focused`        // Simple definition of borders, backgrounds, etc.
 * `is-active`         // Defines the pressed state for buttons, selected state for various
 * `is-disabled`       // Simple definition of borders, backgrounds, etc.
@@ -15,7 +14,10 @@ Additionally, we are using certain prefixes for certain things. For example:
 
 ### Buttons `<button>`
 
-Types:
+Required class:
+* `button`
+
+Additional classes:
 * `button-primary`    // Uses primary palette color
 * `button-secondary`  // Uses secondary palette color
 * `button-tertiary`   // Uses a tertiary palette color, or white
@@ -27,14 +29,14 @@ States:
 
 ### Input `<input>`
 
+Required class:
+* `input`
+
 Types:
-* `text`
-* `email`
-* `tel`
-* `search`
-* `num`
-* `date`
-* `submit`
+* `input-text`
+* `input-checkbox`
+* `input-radio`
+* `input-submit`
 
 Options:
 * `has-error`        // Can receive focus programmatically; alert color styling
@@ -46,6 +48,9 @@ States
 
 ### Select `<select>`
 
+Required class:
+* `select`
+
 Options:
 * `has-error`
 * `has-hint`
@@ -55,6 +60,9 @@ States:
 * `is-disabled`
 
 ### Textarea `<textarea>`
+
+Required class:
+* `textarea`
 
 Options:
 * `has-error`
@@ -66,10 +74,16 @@ States:
 
 ### Label `<label>`
 
+Required class:
+* `label`
+
 States:
 * `is-required`
 
 ### Progress bars `<progress>`
+
+Required class:
+* `progress`
 
 States:
 * `is-working`
@@ -78,8 +92,11 @@ States:
 
 ### Form `<form>`
 
+Required class:
+* `form`
+
 Types:
-* `form-horizontal`  // Defaults items to display: inline-block; can be overridden w align-block
+* `form-horizontal`  // Defaults items to display: inline-block
 * `form-vertical`    // Defaults items to display: block
 
 - - -
@@ -88,11 +105,17 @@ Types:
 
 ### Ordered Lists `<ol>`
 
+Required class:
+* `list`
+
 Types:
 * `list-bulleted`     // When used on ordered lists, displays numbers
 * `list-plain`
 
 ### Unordered Lists `<ul>`
+
+Required class:
+* `list`
 
 Types:
 * `list-bulleted`     // When used on unordered lists, displays filled disc / hollow disc (nested)
@@ -100,10 +123,16 @@ Types:
 
 ### Data Lists `<dl>`
 
+Required class:
+* `list`
+
 Types:
 * `list-stacked`     // Overrides the default tiered styling
 
 ### Blockquote `<blockquote>`
+
+Required class:
+* `blockquote`
 
 States:
 * `blockquote-visual` // If present, would use :before and :after to insert "'s for visual
@@ -113,6 +142,9 @@ States:
 ## Tables
 
 ### Table `<table>`
+
+Required class:
+* `table`
 
 Types:
 * `table-comfortable` // Lots o' padding; more than normal
