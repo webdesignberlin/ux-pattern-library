@@ -7,6 +7,10 @@ These definitions may be defined globally and assigned to various elements.
 * `is-active`         // Defines the pressed state for buttons, selected state for various
 * `is-disabled`       // Simple definition of borders, backgrounds, etc.
 
+Additionally, we are using certain prefixes for certain things. For example:
+* `has-` and `is-` are used to denote a state, for example "this has something" or "this is insome state".
+* `[element]-` is used for visual appearance only, for example, "a horizontal form".
+
 ## Forms
 
 ### Buttons `<button>`
@@ -21,7 +25,7 @@ States:
 * `is-active`
 * `is-disabled`
 
-### Input `<input type="">`
+### Input `<input>`
 
 Types:
 * `text`
@@ -80,65 +84,36 @@ Types:
 
 - - -
 
-## Text content
-
-### Headings `<h1>`, `<h2>`, `<h3>`, etc.
-
-### Paragraphs `<p>`
+## Content and Text
 
 ### Ordered Lists `<ol>`
 
 Types:
-* is-bulleted       // When used on ordered lists, displays numbers
-* is-plain
+* `list-bulleted`     // When used on ordered lists, displays numbers
+* `list-plain`
 
 ### Unordered Lists `<ul>`
 
 Types:
-* is-bulleted       // When used on unordered lists, displays filled disc / hollow disc (nested)
-* is-plain
+* `list-bulleted`     // When used on unordered lists, displays filled disc / hollow disc (nested)
+* `list-plain`
 
 ### Data Lists `<dl>`
 
 Types:
-* is-stacked        // Overrides the default tiered styling
+* `list-stacked`     // Overrides the default tiered styling
 
-### Blockquote `<blockquote>
+### Blockquote `<blockquote>`
 
 States:
-* has-visual-quotes // If present, would use :before and :after to insert "'s for visual
-
-- - -
-
-## Image and multimedia
-* audio
-* figure
-* figcaption
-* img
-* track
-* video
+* `blockquote-visual` // If present, would use :before and :after to insert "'s for visual
 
 - - -
 
 ## Tables
-* table
-* tbody
-* thead
-* tfoot
-* th
-* tr
-* td
-* colgroup
-* caption
 
-- - -
+### Table `<table>`
 
-## Content sectioning
-* main
-* section
-* article
-* aside
-* header
-* footer
-* div
-* nav
+Types:
+* `table-comfortable` // Lots o' padding; more than normal
+* `table-compact`     // Minimal padding; less than normal
