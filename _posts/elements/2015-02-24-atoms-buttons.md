@@ -35,7 +35,7 @@ permalink /atoms/buttons/buttons.html
 
 ### Tertiary Button
 ```
-<button class="button button-tertiary">Tertiary</button>
+<button class="button button-tertiary">Tertiary Button</button>
 ```
 
 ### Focused Primary Button
