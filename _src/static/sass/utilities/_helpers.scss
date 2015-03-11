@@ -3,11 +3,11 @@
 
 // About: Sass partial for defining extends and re-usable elements at the Sass compile level.
 
-// #EXTENDS
-
+// #UTILITIES
+// #RESETS
 
 // ----------------------------
-// #EXTENDS
+// #UTILITIES
 // ----------------------------
 // visual link
 %fake-link {
@@ -19,6 +19,12 @@
   pointer-events: none;
   outline: none;
   cursor: default;
+}
+
+// presentational wrapper
+%wrapper {
+    @include clearfix();
+    width: 100%;
 }
 
 // remove spacing from first/last children
@@ -58,13 +64,15 @@
     white-space: nowrap;
 }
 
+// ----------------------------
+// #UTILITIES
+// ----------------------------
 // reset of lists
 %no-list {
   list-style: none;
   text-indent: 0;
 }
 
-// reset - lists
 %reset-lists {
     @extend %no-list;
     margin: 0;
@@ -95,21 +103,37 @@
 // reset of typography
 %reset-headings {
     margin: 0 0 spacing-h(small) 0;
-    font-family: $heading-font-family;
+    font-family: $headings-base-font-family;
     font-size: font-size(base);
     line-height: line-height(base);
 }
 
-// reset - copy
+// reset of copy
 %reset-copy {
-    font-family: $copy-font-family;
+    font-family: $text-base-font-family;
     font-size: font-size(base);
     line-height: line-height(large);
 }
 
-// reset - code
+// reset of code
 %reset-code {
-    font-family: $code-font-family;
+    font-family: $font-family-monospace;
     font-size: font-size(base);
     line-height: line-height(large);
+}
+
+// reset of links
+%link {
+    @include transition(all 0.15s ease-in-out);
+    border-bottom: rem(1) solid $transparent;
+    color: palette(primary, base);
+    text-decoration: none;
+
+    // STATE: hover, active, focus
+    &:hover,
+    &:active,
+    &:focus {
+      border-bottom-color: palette(primary, sat);
+      color: palette(primary, sat);
+    }
 }
