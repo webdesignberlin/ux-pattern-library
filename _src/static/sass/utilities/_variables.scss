@@ -23,14 +23,14 @@ $baseline-h:    $baseline;
 // #COLORS
 // ----------------------------
 // color: config
-$transparent:       hsla(0%, 0%, 0%, 0.0);
+$transparent:       rgba(0, 0, 0, 0);
 
-$gray:              hsla(0%, 0%, 49%, 1.0);
-$red:               hsla(16%, 52%, 36%, 1.0);
-$yellow:            hsla(4%, 83%, 58%, 1.0);
-$green:             hsla(39%, 50%, 43%, 1.0);
-$blue:              hsla(55%, 82%, 45%, 1.0);
-$pink:              hsla(16%, 50%, 43%, 1.0);
+$gray:              rgb(127, 127, 127);
+$red:               rgb(178, 6, 16);
+$yellow:            rgb(237, 189, 60);
+$green:             rgb(37, 184, 90);
+$blue:              rgb(0, 162, 227);
+$pink:              rgb(183, 37, 103);
 
 $brand-primary:     $blue;
 $brand-secondary:   $pink;
@@ -298,15 +298,15 @@ $link-visited-color: palette(primary, dark);
 // headings
 $headings-base-font-family: $font-family-sans-serif;
 $headings-base-font-weight: font-weight(semi-bold);
-$headings-base-color: palette(grayscale, mid-dark);
+$headings-base-color: palette(grayscale, dark);
 
 $headings-primary-font-family: $font-family-sans-serif;
 $headings-primary-font-weight: $headings-base-font-weight;
-$headings-primary-color: $headings-base-color;
+$headings-primary-color: palette(grayscale, x-dark);
 
 $headings-secondary-font-family: $font-family-sans-serif;
 $headings-secondary-font-weight: $headings-base-font-weight;
-$headings-secondary-color: $headings-base-color;
+$headings-secondary-color: palette(grayscale, mid-dark);
 
 // tables
 $table-cell-padding: spacing-v(small) spacing-h(small);
